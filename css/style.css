@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #D8EFD3;  
+}
+
+header.navbar-container{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1rem;
+    z-index: 999;
+}
+
+header.navbar-container .logo img{
+    width: 150px;
+}
+
+header.navbar-container .nav-list ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li{
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a{
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    transition: all 0.2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a{
+    background-color: #95D2B3;
+    color: white;
+}
+
+main{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main section{
+    display: none;
+    width: 100%;
+}
+
+main .content{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+main .content .content-description{
+    flex: 1 1 0;
+}
+
+main .content .content-description .tittle{
+    font-size: 3.5rem;
+    margin-block: 1rem;
+}
+
+main .content .content-description p{
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+}
+
+main .content .content-description button{
+    padding: 0.8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    color: #365E32;
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: #95D2B3;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+
+main .content .content-description button:hover{
+    border: 3px solid black;
+    color: #365E32;
+    background-color: transparent;
+}
+
+main .content .content-image{
+    flex: 0 0 300px;
+    display: flex;
+    justify-content: center;
+}
+
+main .content .content-image img{
+    width: 100%;
+    height: auto;
+}
+
+main aside{
+    position: fixed;
+    inset-block: 0;
+    inset-inline-end: 0;
+}
+
+main aside .social-media{
+    height: 100%;
+    display: flex;
+}
+
+main aside .social-media ul{
+    padding: 1rem;
+    margin: auto;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background-color: #95D2B3;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem; 
+}
+
+main aside .social-media li{
+    list-style-type: none;
+}
+
+main aside .social-media li a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: #365E32;
+    transition: all 0.1s ease-in-out;
+}
+
+main aside .social-media li a:hover{
+    color: #898989;
+}
+
+/* New CSS for Kontak Section */
+.Contact {
+    display: non1e;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 4rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+
+.Contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #365E32;
+}
+
+.Contact p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.Contact ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Contact ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.Story {
+    display: none;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 4rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+.Story h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #365E32;
+}
+
+.Story-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.Story-item {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Story-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.Story-item img:hover {
+    transform: scale(1.05);
+}
+
+.Portfolio {
+    display: none;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 4rem;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+.Portfolio h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #365E32;
+}
+
+.Portfolio ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Portfolio ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+

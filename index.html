@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurul Santi Hafifah</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="navbar-container">
+        <div class="logo">
+            <h1>Personal Profile</h1>
+        </div>
+        <nav class="nav-list">
+            <ul>
+                <li><a href="#" onclick="showSection('Home')">Home</a></li>
+                <li><a href="#" onclick="showSection('Portfolio')">Portfolio</a></li>
+                <li><a href="#" onclick="showSection('Story')">Story</a></li>
+                <li><a href="#" onclick="showSection('Contact')">Contact</a></li>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Home" class="content">
+            <div class="content-description">
+                <p class="subtittle">Hi! I am,</p>
+                <h1 class="tittle">
+                    Nurul Santi Hafifah<br>
+                </h1>
+                <p>
+                    Second semester student of Informatics at 
+                    Sultan Ageng Tirtayasa University. Have an interest in technological innovation 
+                    based on the Internet of Things and Artificial Intelligence.
+                </p>
+            </div>
+            <div class="content-image">
+                <img src="img/profile.png" alt="Profile">
+            </div>
+        </section>
+
+        <aside>
+            <div class="social-media">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/nrsntihafifah?igsh=MXVyOHFud3hiM3h6cQ=="><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@santihafifah?_t=8n7AI9JZmS8&_r=1"><i class="fab fa-tiktok"></i></a>
+                    </li>
+                    <li>
+                        <a href="http://www.youtube.com/@NurulSantiHafifah"><i class="fab fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <section id="Contact" class="Contact">
+            <h2>Contact</h2>
+            <ul>
+                <li><i class="fab fa-google"></i> Email: <a href="mailto:3337230019@untirta.ac.id">3337230019@untirta.ac.id</a></li>
+                <li><i class="fab fa-whatsapp"></i> WhatsApp: <a href="">081234567890</a></li>
+            </ul>
+        </section>
+
+        <section id="Story" class="Story">
+            <h2>Story</h2>
+            <div class="Story-container">
+                <div class="Story-item">
+                    <img src="img/amd 1.jpg" alt="Photo 1">
+                </div>
+                <div class="Story-item">
+                    <img src="img/amd 2.jpg" alt="Photo 2">
+                </div>
+                <div class="Story-item">
+                    <img src="img/robotic 1.jpg" alt="Photo 3">
+                </div>
+                <div class="Story-item">
+                    <img src="img/robotic 2.jpg" alt="Photo 4">
+                </div>
+                <div class="Story-item">
+                    <img src="img/sertif 1.jpg" alt="Photo 5">
+                </div>
+                <div class="Story-item">
+                    <img src="img/sertif 2.jpg" alt="Photo 6">
+                </div>
+                <div class="Story-item">
+                    <img src="img/hima 2.jpg" alt="Photo 7">
+                </div>
+                <div class="Story-item">
+                    <img src="img/hima 1.jpg" alt="Photo 8">
+                </div>
+                <div class="Story-item">
+                    <img src="img/essay.jpg" alt="Photo 9">
+                </div>
+        </section>
+
+        <section id="Portfolio" class="Portfolio">
+            <h1>Portfolio</h1>
+            </ul>
+                <li>The Top Contender Academy Madrasah Digital 2021</li>
+                <li>Robotic Club</li>
+                <li>Oracle Cloud Infrastructure Foundations I & II</li>
+                <li>Research and Development member of Informatics Student Association</li>
+                <li>General Secretary at Cerdafa Students Community</li>
+                <li>Finalist National Essay Competition Nusantara Muda 2024</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'flex';
+        }
+
+        // Initially show the "Beranda" section
+        showSection('Home');
+    </script>
+</body>
+</html>
